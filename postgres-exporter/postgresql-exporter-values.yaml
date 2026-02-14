@@ -9,6 +9,6 @@ config:
       name: postgresql-secret
       key: POSTGRES_USER
 
-      passwordSecret: {}
+      passwordSecret:
        name: postgresql-secret
        key: POSTGRES_PASSWORD
