@@ -12,3 +12,7 @@ config:
       passwordSecret:
        name: postgresql-secret
        key: POSTGRES_PASSWORD
+
+serviceMonitor:
+  enabled: true
+  labels: prometheus
