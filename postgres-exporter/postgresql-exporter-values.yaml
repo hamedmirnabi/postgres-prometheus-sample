@@ -1,19 +1,1 @@
 # PostgreSQL Exporter Helm Values
-config:
-
-  datasource:
-    # Specify one of both datasource or datasourceSecret
-    host: 'postgres.database-monitoring.svc.cluster'
-    port: "5432"
-    userSecret:
-      name: postgresql-secret
-      key: POSTGRES_USER
-
-    passwordSecret:
-       name: postgresql-secret
-       key: POSTGRES_PASSWORD
-
-serviceMonitor:
-  enabled: true
-  labels: 
-    release: prometheus
